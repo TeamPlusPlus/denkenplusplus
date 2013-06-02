@@ -67,4 +67,4 @@ c::set('cache.html', false);
 c::set('cache.ignore.urls', array());
 c::set('cache.ignore.templates', array());
 
-c::set('cache.episodes', true);
+c::set('cache.episodes', false);
