@@ -24,7 +24,7 @@
 				<?php $newestepisode = Episodes::newest(); ?>
 				<div class="nomobile">
 					<h2>Aktuelle Folge</h2>
-					<?php $image = Episodes::infos($newestepisode)->image; ?>
+					<?php $image = Episodes::infos($newestepisode)->imageWeb; ?>
 					<a href="<?php echo $newestepisode->url(); ?>" class="episode">
 						<span><?php echo Episodes::title($newestepisode, 1); ?></span>
 						<img src="<?php echo $image['url']; ?>" height=200 width=200>
