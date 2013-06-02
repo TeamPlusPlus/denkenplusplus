@@ -15,7 +15,7 @@ class Episodes {
 	static $episodes  = array();
 	
 	static function loadCache() {
-		$file = @file_get_contents(ROOT_SITE_CACHE . '/episodes.ser');
+		$file = @file_get_contents(KIRBY_PROJECT_ROOT_CACHE . '/episodes.ser');
 		
 		if(!$file) return;
 		
@@ -153,7 +153,7 @@ register_shutdown_function(function() {
 		Episodes::$next,
 		Episodes::$episodes
 	);
-	file_put_contents(ROOT_SITE_CACHE . '/episodes.ser', serialize($data));
+	file_put_contents(KIRBY_PROJECT_ROOT_CACHE . '/episodes.ser', serialize($data));
 });
 
 function bytesToSize($bytes, $precision = 2) {  
