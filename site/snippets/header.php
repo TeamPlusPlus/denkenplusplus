@@ -8,12 +8,12 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		
-		<link href="<?php echo url('/feed/mp3') ?>" rel="alternate" type="application/rss+xml" title="Podcast-Feed (MP3)" />
-		<link href="<?php echo url('/feed/m4a') ?>" rel="alternate" type="application/rss+xml" title="Podcast-Feed (M4A)" />
-		<link href="<?php echo url('/feed/ogg') ?>" rel="alternate" type="application/rss+xml" title="Podcast-Feed (Ogg)" />
-		<link href="<?php echo url('/feed/opus') ?>" rel="alternate" type="application/rss+xml" title="Podcast-Feed (Opus)" />
+		<link href="<?php echo url('/feed/mp3') ?>" rel="alternate" type="application/rss+xml" title="Podcast-Feed (MP3)">
+		<link href="<?php echo url('/feed/m4a') ?>" rel="alternate" type="application/rss+xml" title="Podcast-Feed (M4A)">
+		<link href="<?php echo url('/feed/ogg') ?>" rel="alternate" type="application/rss+xml" title="Podcast-Feed (Ogg)">
+		<link href="<?php echo url('/feed/opus') ?>" rel="alternate" type="application/rss+xml" title="Podcast-Feed (Opus)">
 		
-		<meta name="description" content="<?php echo $site->description(); ?>" />
+		<meta name="description" content="<?php echo $site->description(); ?>">
 		<link rel="index" title="<?php echo $site->title(); ?>" href="<?php echo url('/'); ?>">
 		
 		<?php echo css('assets/css/main.css'); ?>
@@ -29,10 +29,10 @@
 		<?php echo js('assets/js/main.js'); ?>
 		
 		<link rel="shortcut icon" href="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/favicon.ico">
-		<link rel="apple-touch-icon" sizes="144x144" href="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/apple-touch-icon-144x144.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon" href="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" href="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/apple-touch-icon.png">
 	</head>
 	<body>
 		<div class="wrapper">
