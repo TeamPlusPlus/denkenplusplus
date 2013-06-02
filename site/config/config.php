@@ -344,6 +344,8 @@ c::set('yourproject.yourvar', 'yourvalue');
 
 */
 
+c::set('cache.episodes', true);
+
 
 /*
 

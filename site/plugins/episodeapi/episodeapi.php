@@ -146,7 +146,7 @@ class Episodes {
 Episodes::loadCache();
 
 register_shutdown_function(function() {
-	if(!c::get('cache')) return;
+	if(!c::get('cache.episodes', false)) return;
 	
 	$data = array(
 		Episodes::$newest,
