@@ -1,0 +1,175 @@
+/*
+ * Design styles for the Team PlusPlus website
+ * @file     design.scss
+ * @author   Lukas Bestle <http://lu-x.me>
+ * @created  28.03.2013 22:28
+ * @updated  29.03.2013 22:20
+ */
+
+// General design elements
+* {
+	user-select: none;
+	font-family: Lato;
+}
+
+// Background image
+header, header nav, footer {
+	@include bgimage("light_wool");
+	background-attachment: fixed;
+}
+
+// Links
+a {
+	text-decoration: none;
+	color: $brand-color;
+	
+	transition: color 0.3s ease-in-out;
+	
+	&:hover {
+		color: $brand-color-dark;
+	}
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+	&, * {
+		font-family: 'Nevis';
+	}
+	color: #888;
+}
+
+// Navigation
+.feed {
+	span {
+		@include bgimage("light_wool");
+		background-attachment: fixed;
+		
+		border-radius: 3px;
+		
+		box-shadow: 0 0 10px gray;
+	}
+}
+nav {
+	box-shadow: 0 10px 10px -10px gray;
+	
+	opacity: 0.95;
+	
+	a {
+		color: black;
+		
+		font-family: 'Code';
+		
+		&.active {
+			pointer-events: none;
+		}
+		
+		position: relative;
+		
+		// Navigation arrow
+		&:after, &:before {
+			content: "";
+			
+			position: absolute;
+			
+			border: solid transparent;
+			
+			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+		}
+		
+		&:after {
+			left: 50%;
+			bottom: -25px;
+			
+			border-color: rgba(0, 0, 0, 0);
+			border-top-color: white;
+			border-width: 5px;
+			margin-left: -5px;
+		}
+		&:before {
+			left: 50%;
+			bottom: -35px;
+			
+			border-color: rgba(194, 225, 245, 0);
+			border-top-color: $brand-color;
+			border-width: 10px;
+			margin-left: -10px;
+		}
+		
+		&.active, &.open {
+			&:after, &:before {
+				opacity: 1;
+			}
+		}
+		
+		&.open {
+			&:before {
+				border-top-color: darken($brand-color, 20);
+			}
+		}
+		
+		&:hover {
+			color: #777;
+		}
+	}
+}
+
+// Sidebar
+aside {
+	line-height: 1.45;
+	
+	h2, h2 * {
+		font-family: Code;
+		font-size: 15px;
+		color: black;
+	}
+	
+	.highlight {
+		color: #C10000;
+		
+		&:hover {
+			color: #920000;
+		}
+	}
+	
+	.episode span {
+		font-family: Code;
+	}
+	
+	[data-icon]:before {
+		color: black;
+	}
+}
+
+// Main content
+section.main {
+	.episode {
+		.intro * {
+			font-size: 17px;
+		}
+	}
+	
+	line-height: 1.45;
+	
+	transition: opacity 0.3s ease-in-out;
+	
+	* {
+		user-select: text;
+	}
+	
+	.infos a {
+		color: black;
+		
+		&:hover {
+			color: $brand-color-dark;
+		}
+	}
+}
+
+// Footer
+footer {
+	box-shadow: 0 10px 10px 10px gray;
+	margin: 0 -20px;
+	
+	color: #888;
+}

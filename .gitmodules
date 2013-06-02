@@ -1,0 +1,6 @@
+[submodule "kirby"]
+	path = kirby
+	url = https://github.com/getkirby/cms
+[submodule "assets/vendor/podlove"]
+	path = assets/vendor/podlove
+	url = https://github.com/podlove/podlove-web-player
