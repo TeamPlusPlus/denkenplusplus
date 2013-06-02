@@ -15,7 +15,7 @@
 		<meta property="og:image" content="<?php echo Episodes::infos($page)->image['url'] ?>">
 		<meta property="og:image:type" content="image/jpeg">
 		<?php else: ?>
-		<meta property="og:image" content="http://media.plusplus.serpens.uberspace.de/Images/Denken++/profile.png">
+		<meta property="og:image" content="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/profile.png">
 		<meta property="og:image:type" content="image/png">
 		<?php endif; ?>
 		<meta property="og:image:width" content="1000">
