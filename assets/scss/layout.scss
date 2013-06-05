@@ -247,6 +247,14 @@ section.main {
 		.podlovewebplayer_wrapper .togglers a.pwp-icon-download {
 			display: inline !important;
 		}
+		
+		.podlovewebplayer_downloadbuttons select {
+			margin-right: 0;
+		}
+		.podlovewebplayer_downloadbuttons .openfilebutton,
+		.podlovewebplayer_downloadbuttons .fileinfobutton {
+			display: none !important;
+		}
 	}
 	
 	.flattrtop {
