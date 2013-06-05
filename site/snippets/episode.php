@@ -46,7 +46,7 @@
 											echo ',';
 										}
 										$first = false; ?>
-										{'name': '<?php echo $format; ?>', 'url': '<?php echo $data['url']; ?>?listen', 'dlurl': '<?php echo $data['url']; ?>', 'size': '<?php echo $data['size']; ?>'}
+										{'name': '<?php echo $format; ?>', 'url': '<?php echo $data['url']; ?>', 'dlurl': '<?php echo $data['url']; ?>', 'size': '<?php echo $data['size']; ?>'}
 									<?php } ?>
 								]
 							});
