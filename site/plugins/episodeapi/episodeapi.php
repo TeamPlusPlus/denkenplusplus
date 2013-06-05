@@ -136,7 +136,26 @@ class Episodes {
 		$obj->mp3   = isset($data['media']['mp3'])?  $data['media']['mp3'] : null;
 		$obj->ogg   = isset($data['media']['ogg'])?  $data['media']['ogg'] : null;
 		$obj->opus  = isset($data['media']['opus'])? $data['media']['opus'] : null;
-		$obj->media = $data['media'];
+		
+		$obj->media = array();
+		foreach($data['media'] as $type => $mediaInfos) {
+			$resultType = $type;
+			switch($type) {
+				case 'mp3':
+					$resultType = 'MP3';
+					break;
+				case 'm4a':
+					$resultType = 'M4A';
+					break;
+				case 'opus':
+					$resultType = 'Opus';
+					break;
+				case 'ogg':
+					$resultType = 'Ogg Vorbis';
+			}
+			
+			$obj->media[$resultType] = $mediaInfos;
+		}
 		
 		$obj->infos = $data['infos'];
 		
@@ -155,24 +174,3 @@ register_shutdown_function(function() {
 	);
 	file_put_contents(KIRBY_PROJECT_ROOT_CACHE . '/episodes.ser', serialize($data));
 });
-
-function bytesToSize($bytes, $precision = 2) {  
-	$kilobyte = 1024;
-	$megabyte = $kilobyte * 1024;
-	$gigabyte = $megabyte * 1024;
-	$terabyte = $gigabyte * 1024;
-
-	if (($bytes >= 0) && ($bytes < $kilobyte)) {
-		return $bytes . ' Bytes';
-	} elseif (($bytes >= $kilobyte) && ($bytes < $megabyte)) {
-		return round($bytes / $kilobyte, $precision) . ' kB';
-	} elseif (($bytes >= $megabyte) && ($bytes < $gigabyte)) {
-		return round($bytes / $megabyte, $precision) . ' MB';
-	} elseif (($bytes >= $gigabyte) && ($bytes < $terabyte)) {
-		return round($bytes / $gigabyte, $precision) . ' GB';
-	} elseif ($bytes >= $terabyte) {
-		return round($bytes / $terabyte, $precision) . ' TB';
-	} else {
-		return $bytes . ' Bytes';
-	}
-}
