@@ -23,12 +23,8 @@
 				<a href="<?php echo url('/'); ?>/" class="logo"><img src="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/logo.png" alt="<?php echo $site->title(); ?>"></a>
 				<?php $newestepisode = Episodes::newest(); ?>
 				<div class="nomobile">
-					<h2>Aktuelle Folge</h2>
-					<?php $image = Episodes::infos($newestepisode)->imageWeb; ?>
-					<a href="<?php echo $newestepisode->url(); ?>" class="episode">
-						<span><?php echo Episodes::title($newestepisode, 1); ?></span>
-						<img src="<?php echo $image['url']; ?>" height=200 width=200>
-					</a>
+					<h2>Aktuelle Folge:</h2>
+					<a href="<?php echo $newestepisode->url(); ?>"><?php echo Episodes::title($newestepisode, 0); ?></a>
 				</div>
 				
 				<h2>Nächste Folge: <?php echo Episodes::next()->infos->number; ?></h2>

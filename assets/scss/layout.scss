@@ -137,23 +137,12 @@ aside {
 	}
 	
 	h2 {
-		margin-top: 10px;
-	}
-	
-	.episode {
-		position: relative;
-		display: block;
-		
-		span {
-			position: absolute;
-			left: 12%;
-			right: 12%;
-			bottom: 12%;
-			display: block;
-		}
+		margin-top: 20px;
 	}
 	
 	.donate {
+		margin-top: 20px;
+		
 		iframe, form {
 			float: left;
 		}

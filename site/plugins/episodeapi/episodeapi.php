@@ -130,16 +130,15 @@ class Episodes {
 	
 	private static function objectify($data) {
 		$obj = new StdClass();
-		$obj->image    = isset($data['cover']['png'])?  $data['cover']['png'] : null;
-		$obj->imageWeb = isset($data['cover']['web.png'])?  $data['cover']['web.png'] : null;
+		$obj->image = isset($data['cover']['png'])?  $data['cover']['png'] : null;
 		
-		$obj->m4a      = isset($data['media']['m4a'])?  $data['media']['m4a'] : null;
-		$obj->mp3      = isset($data['media']['mp3'])?  $data['media']['mp3'] : null;
-		$obj->ogg      = isset($data['media']['ogg'])?  $data['media']['ogg'] : null;
-		$obj->opus     = isset($data['media']['opus'])? $data['media']['opus'] : null;
-		$obj->media    = $data['media'];
+		$obj->m4a   = isset($data['media']['m4a'])?  $data['media']['m4a'] : null;
+		$obj->mp3   = isset($data['media']['mp3'])?  $data['media']['mp3'] : null;
+		$obj->ogg   = isset($data['media']['ogg'])?  $data['media']['ogg'] : null;
+		$obj->opus  = isset($data['media']['opus'])? $data['media']['opus'] : null;
+		$obj->media = $data['media'];
 		
-		$obj->infos    = $data['infos'];
+		$obj->infos = $data['infos'];
 		
 		return $obj;
 	}
