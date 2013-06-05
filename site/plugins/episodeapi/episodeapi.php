@@ -138,23 +138,25 @@ class Episodes {
 		$obj->opus  = isset($data['media']['opus'])? $data['media']['opus'] : null;
 		
 		$obj->media = array();
-		foreach($data['media'] as $type => $mediaInfos) {
-			$resultType = $type;
-			switch($type) {
-				case 'mp3':
-					$resultType = 'MP3';
-					break;
-				case 'm4a':
-					$resultType = 'M4A';
-					break;
-				case 'opus':
-					$resultType = 'Opus';
-					break;
-				case 'ogg':
-					$resultType = 'Ogg Vorbis';
+		if(isset($data['media'])) {
+			foreach($data['media'] as $type => $mediaInfos) {
+				$resultType = $type;
+				switch($type) {
+					case 'mp3':
+						$resultType = 'MP3';
+						break;
+					case 'm4a':
+						$resultType = 'M4A';
+						break;
+					case 'opus':
+						$resultType = 'Opus';
+						break;
+					case 'ogg':
+						$resultType = 'Ogg Vorbis';
+				}
+				
+				$obj->media[$resultType] = $mediaInfos;
 			}
-			
-			$obj->media[$resultType] = $mediaInfos;
 		}
 		
 		$obj->infos = $data['infos'];
