@@ -89,7 +89,7 @@ class Episodes {
 		
 		$episodeID = static::title($episode, 2);
 		
-		$json = @file_get_contents("http://media.plusplus.serpens.uberspace.de/denken/$episodeID");
+		$json = @file_get_contents("http://media.plusp.lu/denken/$episodeID");
 		$data = json_decode($json, true);
 		
 		static::$episodes[$episode->uri()] = $data;

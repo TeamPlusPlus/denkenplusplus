@@ -15,7 +15,7 @@
 		<meta property="og:image" content="<?php echo Episodes::infos($page)->image['url'] ?>">
 		<meta property="og:image:type" content="image/jpeg">
 		<?php else: ?>
-		<meta property="og:image" content="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/profile.png">
+		<meta property="og:image" content="http://stuff.plusp.lu/Images/Denken++/profile.png">
 		<meta property="og:image:type" content="image/png">
 		<?php endif; ?>
 		<meta property="og:image:width" content="1000">
@@ -51,15 +51,15 @@
 		
 		<?php echo js('assets/js/main.js'); ?>
 		
-		<link rel="shortcut icon" href="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/favicon.ico">
-		<link rel="apple-touch-icon" sizes="144x144" href="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/apple-touch-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" href="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/apple-touch-icon.png">
+		<link rel="shortcut icon" href="http://stuff.plusp.lu/Images/Denken++/favicon.ico">
+		<link rel="apple-touch-icon" sizes="144x144" href="http://stuff.plusp.lu/Images/Denken++/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="http://stuff.plusp.lu/Images/Denken++/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="http://stuff.plusp.lu/Images/Denken++/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" href="http://stuff.plusp.lu/Images/Denken++/apple-touch-icon.png">
 	</head>
 	<body>
 		<div class="wrapper">
 			<header>
 				<div class="center">
-					<h1><a href="<?php echo url('/'); ?>"><img src="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/logo.png" alt="<?php echo $site->title(); ?>"></a></h1>
+					<h1><a href="<?php echo url('/'); ?>"><img src="http://stuff.plusp.lu/Images/Denken++/logo.png" alt="<?php echo $site->title(); ?>"></a></h1>
 				</div>

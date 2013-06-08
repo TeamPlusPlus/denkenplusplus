@@ -32,7 +32,7 @@ header('Content-type: application/rss+xml; charset="utf-8"');
 		<itunes:keywords><?php echo $pages->find('feed')->keywords() ?></itunes:keywords>
 		
 		<itunes:explicit>No</itunes:explicit>
-		<itunes:image href="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/profile.png"/>
+		<itunes:image href="http://stuff.plusp.lu/Images/Denken++/profile.png"/>
 		
 		<itunes:category text="<?php echo xml($pages->find('feed')->category()) ?>">
 			<itunes:category text="<?php echo xml($pages->find('feed')->subcategory()) ?>"/>

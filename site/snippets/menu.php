@@ -9,7 +9,7 @@
 						</span>
 					</span>
 					<nav>
-						<a href="<?php echo $site->teamurl(); ?>" class="logo"><img src="http://stuff.plusplus.serpens.uberspace.de/Images/Team/logo_mono.png" alt="<?php echo $site->title(); ?>"></a>
+						<a href="http://<?php echo $site->teamurl(); ?>" class="logo"><img src="http://stuff.plusp.lu/Images/Team/logo_mono.png" alt="<?php echo $site->title(); ?>"></a>
 						<ul>
 							<li data-icon="l"><a<?php if(Episodes::newest()->isActive()) { echo ' class="active"'; $active = true; } ?> href="<?php echo Episodes::newest()->url(); ?>">Aktuelle Folge</a></li>
 <?php foreach($pages->visible() as $p): ?>
@@ -20,7 +20,7 @@
 				</div>
 			</header>
 			<aside>
-				<a href="<?php echo url('/'); ?>/" class="logo"><img src="http://stuff.plusplus.serpens.uberspace.de/Images/Denken++/logo.png" alt="<?php echo $site->title(); ?>"></a>
+				<a href="<?php echo url('/'); ?>/" class="logo"><img src="http://stuff.plusp.lu/Images/Denken++/logo.png" alt="<?php echo $site->title(); ?>"></a>
 				<?php $newestepisode = Episodes::newest(); ?>
 				<div class="nomobile">
 					<h2>Aktuelle Folge:</h2>
@@ -41,7 +41,7 @@
 				<div class="nomobile">
 					<h2>Kontakt</h2>
 					<p>
-						<span data-icon="m"><a href="mailto:&amp;#x68;&amp;#97;&amp;#108;&amp;#x6c;&amp;#x6f;&amp;#x40;&amp;#x70;&amp;#x6c;&amp;#x75;&amp;#x73;&amp;#112;&amp;#108;&amp;#x2e;&amp;#x75;&amp;#115;">hallo@pluspl.us</a></span><br>
+						<span data-icon="m"><?php echo html::email('hallo@' . $site->teamurl()); ?></span><br>
 						<span data-icon="t"><a href="https://twitter.com/TeamPlusPlus">@TeamPlusPlus</a></span>
 					</p>
 				
