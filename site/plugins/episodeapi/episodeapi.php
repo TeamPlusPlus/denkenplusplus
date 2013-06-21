@@ -59,6 +59,7 @@ class Episodes {
 	}
 	
 	static function title($episode, $version=0) {
+		if(!is_object($episode) || $episode == new StdClass()) return '';
 		$episodeComponents = explode('/', $episode->uri());
 		
 		if(!isset($episodeComponents[1])) {
@@ -98,22 +99,26 @@ class Episodes {
 	}
 	
 	private static function nextData($id) {
-		$page = site()->pages()->find("episodes/$id");
-		
-		$timestamp = @strtotime($page->live());
-		
 		$state = STATE_NO;
 		$live  = "";
-		if($timestamp + 5400 <= time()) {
-			$state = STATE_RECORDED;
-		} else if($timestamp <= time()) {
-			$state = STATE_LIVE;
-		} else {
-			$state = STATE_SOON;
-			if($timestamp % 3600) {
-				$live = strftime('%A ~%H:%M Uhr', $timestamp);
+		$page = new StdClass();
+		
+		if($id != '') {
+			$page = site()->pages()->find("episodes/$id");
+			
+			$timestamp = @strtotime($page->live());
+			
+			if($timestamp + 5400 <= time()) {
+				$state = STATE_RECORDED;
+			} else if($timestamp <= time()) {
+				$state = STATE_LIVE;
 			} else {
-				$live = strftime('%A ~%H Uhr', $timestamp);
+				$state = STATE_SOON;
+				if($timestamp % 3600) {
+					$live = strftime('%A ~%H:%M Uhr', $timestamp);
+				} else {
+					$live = strftime('%A ~%H Uhr', $timestamp);
+				}
 			}
 		}
 		
