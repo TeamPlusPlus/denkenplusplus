@@ -38,6 +38,7 @@
 								permalink: '<?php echo $p->url(); ?>',
 								subtitle: '<?php echo html($p->subtitle()); ?>',
 								duration: '<?php echo gmdate('H:i:s', $infos->infos['duration']); ?>',
+								chapters: <?php echo json_encode($infos->infos['chapters']); ?>,
 								downloads: [
 									<?php
 									$first = true;
