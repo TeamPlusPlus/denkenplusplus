@@ -22,6 +22,8 @@ header('Content-type: application/rss+xml; charset="utf-8"');
 		<description><?php echo xml($pages->find('feed')->description()) ?></description>
 		<?php endif ?>
 		
+		<language>de-de</language>
+		
 		<itunes:author>Team++</itunes:author>
 		<itunes:subtitle><?php echo xml($pages->find('feed')->shortdesc()) ?></itunes:subtitle>
 		<itunes:summary><?php echo xml($pages->find('feed')->description()) ?></itunes:summary>
