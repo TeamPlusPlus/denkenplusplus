@@ -1,8 +1,9 @@
 Title: Denken++
 ----
-Description: Ein zweiwöchentlicher Podcast…
+Description: Denken++ ist ein zweiwöchentlicher Podcast mit wechselnden Themen aus der Technikwelt.
+Jede Folge beleuchten wir sowohl die technischen als auch die gesellschaftlichen Aspekte eines Themas.
 ----
-Shortdesc: Ein Podcast
+Shortdesc: Ein zweiwöchentlicher Podcast mit wechselnden Themen aus Technikwelt und Gesellschaft.
 ----
 Keywords: technology, talk
 ----
