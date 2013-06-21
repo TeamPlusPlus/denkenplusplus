@@ -29,7 +29,7 @@ header('Content-type: application/rss+xml; charset="utf-8"');
 		<itunes:summary><?php echo xml($pages->find('feed')->description()) ?></itunes:summary>
 		<itunes:owner>
 			<itunes:name>Lukas Bestle</itunes:name>
-			<itunes:email>hallo@<?php echo $_SERVER['HTTP_HOST'] ?></itunes:email>
+			<itunes:email>hallo@<?php echo $site->teamurl() ?></itunes:email>
 		</itunes:owner>
 		<itunes:keywords><?php echo $pages->find('feed')->keywords() ?></itunes:keywords>
 		
