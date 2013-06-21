@@ -35,7 +35,7 @@
 				<?php } else if(Episodes::next()->infos->state == STATE_RECORDED) { ?>
 				<a href="http://mixlr.com/team/showreel/denken-<?php echo Episodes::next()->infos->id; ?>" data-icon="b" class="highlight">ReLive hören</a>
 				<?php } else { ?>
-				<span data-icon="b">Nicht geplant</span>
+				<span data-icon="b">In Planung</span>
 				<?php } ?>
 				
 				<div class="nomobile">
