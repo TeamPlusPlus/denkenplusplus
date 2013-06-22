@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?php echo $site->language(); ?>" prefix="og: http://ogp.me/ns#">
+<html lang="de" prefix="og: http://ogp.me/ns#">
 	<head>
 		<meta charset="utf-8">
 		<title><?php echo $site->title(); ?> » <?php echo Episodes::title($page); ?></title>

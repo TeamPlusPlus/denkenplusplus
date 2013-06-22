@@ -46,12 +46,12 @@
 					</p>
 				
 					<div class="donate">
-						<iframe src="http://api.flattr.com/button/view/?uid=teamplusplus&amp;url=<?php echo rawurlencode($site->url()); ?>&amp;title=<?php echo rawurlencode(html($site->title())); ?>&amp;description=<?php echo rawurlencode(html($site->description())) ?>&amp;category=audio&amp;language=de_DE" style="width:55px; height:62px;" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+						<iframe src="http://api.flattr.com/button/view/?uid=teamplusplus&amp;url=<?php echo rawurlencode($site->url()); ?>&amp;title=<?php echo rawurlencode(html($site->title())); ?>&amp;description=<?php echo rawurlencode(html($site->description())) ?>&amp;category=audio&amp;language=de_DE" style="width:55px; height:62px;"></iframe>
 						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 							<input type="hidden" name="cmd" value="_s-xclick">
 							<input type="hidden" name="hosted_button_id" value="C3NZ6UJMANXSW">
-							<input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
-							<img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+							<input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_LG.gif" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
+							<img alt="" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
 						</form>
 					</div>
 				</div>

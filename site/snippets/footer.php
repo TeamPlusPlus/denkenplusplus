@@ -8,6 +8,6 @@
 					<li><a href="http://<?php echo $site->teamurl(); ?>/imprint">Impressum</a></li>
 				</ul>
 			</footer>
-		</section>
+		</div>
 	</body>
 </html>

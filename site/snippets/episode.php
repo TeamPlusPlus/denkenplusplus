@@ -13,10 +13,10 @@
 					
 <?php $image = Episodes::infos($p)->image['url']; ?>
 <?php if($image): ?>
-					<?php echo $linkTag; ?><img src="<?php echo $image; ?>" height=200 width=200 class="episodelogo"><?php echo $linkCloseTag; ?>
+					<?php echo $linkTag; ?><img src="<?php echo $image; ?>" height=200 width=200 class="episodelogo" alt="<?php echo Episodes::title($p, 0); ?>"><?php echo $linkCloseTag; ?>
 <?php endif; ?>
 					<?php if(!isset($onlyimage)) { ?>
-					<?php if(!isset($teaser)) { ?><iframe src="http://api.flattr.com/button/view/?uid=teamplusplus&amp;url=<?php echo rawurlencode($p->url()); ?>&amp;title=<?php echo rawurlencode(html(Episodes::title($p, 4))); ?>&amp;description=<?php echo rawurlencode(html($p->text())) ?>&amp;category=audio&amp;language=de_DE" style="width:55px; height:62px;" allowtransparency="true" frameborder="0" scrolling="no" class="flattrtop"></iframe><?php } ?>
+					<?php if(!isset($teaser)) { ?><iframe src="http://api.flattr.com/button/view/?uid=teamplusplus&amp;url=<?php echo rawurlencode($p->url()); ?>&amp;title=<?php echo rawurlencode(html(Episodes::title($p, 4))); ?>&amp;description=<?php echo rawurlencode(html($p->text())) ?>&amp;category=audio&amp;language=de_DE" style="width:55px; height:62px;" class="flattrtop"></iframe><?php } ?>
 					<ul class="infos block">
 						<li data-icon="d"><?php echo $p->date('d.m.Y H:i'); ?></li>
 						<li data-icon="h"><?php echo $p->team(); ?></li>
@@ -29,10 +29,10 @@
 					<div class="player">
 						<?php $infos = Episodes::infos(Episodes::newest()); ?>
 						<audio controls preload="metadata" id="podloveplayer">
-							<?php if($infos->mp3) { ?><source src="<?php echo $infos->mp3['url']; ?>" type="audio/mpeg"></source><?php } ?>
-							<?php if($infos->m4a) { ?><source src="<?php echo $infos->m4a['url']; ?>" type="audio/mp4"></source><?php } ?>
-							<?php if($infos->ogg) { ?><source src="<?php echo $infos->ogg['url']; ?>" type="audio/ogg; codecs=vorbis"></source><?php } ?>
-							<?php if($infos->opus) { ?><source src="<?php echo $infos->opus['url']; ?>" type="audio/ogg; codecs=opus"></source><?php } ?>
+							<?php if($infos->mp3) { ?><source src="<?php echo $infos->mp3['url']; ?>" type="audio/mpeg"><?php } ?>
+							<?php if($infos->m4a) { ?><source src="<?php echo $infos->m4a['url']; ?>" type="audio/mp4"><?php } ?>
+							<?php if($infos->ogg) { ?><source src="<?php echo $infos->ogg['url']; ?>" type="audio/ogg; codecs=vorbis"><?php } ?>
+							<?php if($infos->opus) { ?><source src="<?php echo $infos->opus['url']; ?>" type="audio/ogg; codecs=opus"><?php } ?>
 						</audio>
 						<script>
 							$('#podloveplayer').podlovewebplayer({
