@@ -40,8 +40,8 @@
 								title: '<?php echo Episodes::title($p, 4); ?>',
 								permalink: '<?php echo $p->url(); ?>',
 								subtitle: '<?php echo html($p->subtitle()); ?>',
-								duration: '<?php echo gmdate('H:i:s', $infos->infos['duration']); ?>',
-								chapters: <?php echo json_encode($infos->infos['chapters']); ?>,
+								duration: '<?php echo gmdate('H:i:s', $infos->duration); ?>',
+								chapters: <?php echo json_encode($infos->chapters); ?>,
 								downloads: [
 									<?php
 									$first = true;

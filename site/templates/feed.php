@@ -58,7 +58,7 @@ header('Content-type: application/rss+xml; charset="utf-8"');
 				<itunes:explicit>No</itunes:explicit>
 				<itunes:subtitle><?php echo strip_tags(kirbytext($item->subtitle())) ?></itunes:subtitle>
 				<itunes:summary><?php echo strip_tags(kirbytext($item->text())) ?></itunes:summary>
-				<itunes:duration><?php echo Episodes::infos($item)->infos['duration']; ?></itunes:duration>
+				<itunes:duration><?php echo Episodes::infos($item)->duration; ?></itunes:duration>
 				<itunes:image href="<?php echo Episodes::infos($item)->image['url'] ?>"/>
 
 				<?php switch($page->type()):

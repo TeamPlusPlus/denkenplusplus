@@ -52,7 +52,7 @@ class Episodes {
 		foreach($pages as $page) {
 			$data = static::infos($page, true);
 			
-			if(!is_array($data) || !isset($data['media']['mp3']) || !isset($data['cover']['png']) || !$page->text() || !$page->title() || !$page->shownotes()) continue;
+			if(!is_array($data) || !isset($data['files']['media']['mp3']) || !isset($data['files']['cover']['png']) || !$page->text() || !$page->title() || !$page->shownotes()) continue;
 			
 			return site()->pages()->find('episodes/' . static::$newest = static::title($page, 3));
 		}
@@ -135,16 +135,16 @@ class Episodes {
 	
 	private static function objectify($data) {
 		$obj = new StdClass();
-		$obj->image = isset($data['cover']['png'])?  $data['cover']['png'] : null;
+		$obj->image = isset($data['files']['cover']['png'])?  $data['files']['cover']['png'] : null;
 		
-		$obj->m4a   = isset($data['media']['m4a'])?  $data['media']['m4a'] : null;
-		$obj->mp3   = isset($data['media']['mp3'])?  $data['media']['mp3'] : null;
-		$obj->ogg   = isset($data['media']['ogg'])?  $data['media']['ogg'] : null;
-		$obj->opus  = isset($data['media']['opus'])? $data['media']['opus'] : null;
+		$obj->m4a   = isset($data['files']['media']['m4a'])?  $data['files']['media']['m4a'] : null;
+		$obj->mp3   = isset($data['files']['media']['mp3'])?  $data['files']['media']['mp3'] : null;
+		$obj->ogg   = isset($data['files']['media']['ogg'])?  $data['files']['media']['ogg'] : null;
+		$obj->opus  = isset($data['files']['media']['opus'])? $data['files']['media']['opus'] : null;
 		
 		$obj->media = array();
-		if(isset($data['media'])) {
-			foreach($data['media'] as $type => $mediaInfos) {
+		if(isset($data['files']['media'])) {
+			foreach($data['files']['media'] as $type => $mediaInfos) {
 				$resultType = $type;
 				switch($type) {
 					case 'mp3':
@@ -165,6 +165,8 @@ class Episodes {
 		}
 		
 		$obj->infos = $data['infos'];
+		$obj->duration = $data['duration'];
+		$obj->chapters = $data['chapters'];
 		
 		return $obj;
 	}
