@@ -2,6 +2,7 @@
 				<div class="nav">
 					<span data-icon="r" class="feed">
 						<span>
+							<a href="<?php echo url('/feed') ?>">Alle</a>
 							<a href="<?php echo url('/feed/mp3') ?>">MP3</a>
 							<a href="<?php echo url('/feed/m4a') ?>">M4A</a>
 							<a href="<?php echo url('/feed/opus') ?>">Opus</a>

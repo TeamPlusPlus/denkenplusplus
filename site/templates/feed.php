@@ -44,7 +44,7 @@ header('Content-type: application/rss+xml; charset="utf-8"');
 		$newestID = Episodes::title(Episodes::newest(), 2);
 		$first = true;
 		foreach($pages->find('episodes')->children()->flip() as $item):
-			if(Episodes::title($item, 2) > $newestID || !Episodes::infos($item)->{$page->type()}) continue; ?>
+			if(Episodes::title($item, 2) > $newestID || ($page->type() != 'all' && !Episodes::infos($item)->{$page->type()})) continue; ?>
 			
 			<item>
 				<title><?php echo xml(Episodes::title($item, 4)) ?></title>
@@ -61,21 +61,28 @@ header('Content-type: application/rss+xml; charset="utf-8"');
 				<itunes:duration><?php echo Episodes::infos($item)->duration; ?></itunes:duration>
 				<itunes:image href="<?php echo Episodes::infos($item)->image['url'] ?>"/>
 
-				<?php switch($page->type()):
-          case 'mp3': 
-          	$type = 'audio/mpeg';
-          	break;
+				<?php
+				$types = array();
+				$mime = array(
+					'mp3' => 'audio/mpeg',
+					'm4a' => 'audio/mp4',
+					'opus' => 'audio/ogg; codecs=opus',
+					'ogg' => 'audio/ogg; codecs=vorbis'
+				);
+				switch($page->type()):
+          case 'mp3':
           case 'm4a':
-          	$type = 'audio/mp4';
-          	break;
           case 'opus':
-          	$type = 'audio/ogg; codecs=opus';
-          	break;
           case 'ogg':
-          	$type = 'audio/ogg; codecs=vorbis';
-        endswitch; ?>
+          	$types = array((string)$page->type());
+          	break;
+          case 'all':
+          	$types = array('mp3', 'm4a', 'opus', 'ogg');
+        endswitch;
         
-				<enclosure url="<?php echo Episodes::infos($item)->{$page->type()}['url']; ?>" length="<?php echo Episodes::infos($item)->{$page->type()}['size'] ?>" type="<?php echo $type ?>"/>
+        foreach($types as $type): ?>
+        <enclosure url="<?php echo Episodes::infos($item)->{$type}['url']; ?>" length="<?php echo Episodes::infos($item)->{$type}['size'] ?>" type="<?php echo $mime[$type] ?>"/>
+        <?php endforeach; ?>
         
   			<atom:link rel="payment" href="http://api.flattr.com/submit/auto/?uid=teamplusplus&amp;url=<?php echo rawurlencode($item->url()); ?>&amp;title=<?php echo rawurlencode(html(Episodes::title($item, 4))); ?>&amp;description=<?php echo rawurlencode(html($item->text())) ?>&amp;category=audio&amp;language=de_DE" type="text/html" />
 			</item>

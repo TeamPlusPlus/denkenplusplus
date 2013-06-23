@@ -11,4 +11,4 @@ Category: Technology
 ----
 Subcategory: Tech News
 ----
-Link: /
+Type: all
