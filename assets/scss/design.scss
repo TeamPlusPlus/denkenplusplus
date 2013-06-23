@@ -41,12 +41,19 @@ h1, h2, h3, h4, h5, h6 {
 // Navigation
 .feed {
 	span {
+		opacity: 0;
+		transition: opacity 0.2s ease-in-out;
+		
 		@include bgimage("light_wool");
 		background-attachment: fixed;
 		
 		border-radius: 3px;
 		
 		box-shadow: 0 0 10px gray;
+	}
+	
+	&:hover span {
+		opacity: 1;
 	}
 }
 nav {

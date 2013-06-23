@@ -43,9 +43,6 @@ header {
 		z-index: 120;
 		
 		span {
-			opacity: 0;
-			transition: opacity 0.2s ease-in-out;
-			
 			position: absolute;
 			z-index: 110;
 			top: -10px;
@@ -54,14 +51,12 @@ header {
 			padding: 10px;
 			padding-top: 60px;
 			
+			text-align: center;
+			
 			a {
 				display: block;
 				line-height: 1.45;
 			}
-		}
-		
-		&:hover span {
-			opacity: 1;
 		}
 		
 		&:before {
