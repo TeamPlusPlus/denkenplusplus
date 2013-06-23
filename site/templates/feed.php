@@ -15,7 +15,7 @@ header('Content-type: application/rss+xml; charset="utf-8"');
 	<channel>
 		<title><?php echo xml($pages->find('feed')->title()) ?></title>
 		<link><?php echo xml(url()) ?></link>
-		<lastBuildDate><?php date('r', $site->modified()) ?></lastBuildDate>
+		<lastBuildDate><?php echo date('r', $site->modified()) ?></lastBuildDate>
 		<atom:link href="<?php echo xml(thisURL()) ?>" rel="self" type="application/rss+xml" />
 
 		<?php if($pages->find('feed')->description()): ?>
