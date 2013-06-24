@@ -84,6 +84,12 @@ header('Content-type: application/rss+xml; charset="utf-8"');
         <enclosure url="<?php echo Episodes::infos($item)->{$type}['url']; ?>" length="<?php echo Episodes::infos($item)->{$type}['size'] ?>" type="<?php echo $mime[$type] ?>"/>
         <?php endforeach; ?>
         
+        <psc:chapters version="1.2" xmlns:psc="http://podlove.org/simple-chapters">
+        	<?php foreach(Episodes::infos($item)->chapters as $chapter): ?>
+          <psc:chapter start="<?php echo $chapter['start']; ?>" title="<?php echo $chapter['title']; ?>"<?php if(isset($chapter['href'])): echo " href=\"{$chapter['href']}\""; endif; ?><?php if(isset($chapter['image'])): echo " image=\"{$chapter['image']}\""; endif; ?> />
+        	<?php endforeach; ?>
+        </psc:chapters>
+        
   			<atom:link rel="payment" href="http://api.flattr.com/submit/auto/?uid=teamplusplus&amp;url=<?php echo rawurlencode($item->url()); ?>&amp;title=<?php echo rawurlencode(html(Episodes::title($item, 4))); ?>&amp;description=<?php echo rawurlencode(html($item->text())) ?>&amp;category=audio&amp;language=de_DE" type="text/html" />
 			</item>
 		<?php endforeach ?>
