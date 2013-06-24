@@ -136,6 +136,7 @@ class Episodes {
 	private static function objectify($data) {
 		$obj = new StdClass();
 		$obj->image = isset($data['files']['cover']['png'])?  $data['files']['cover']['png'] : null;
+		$obj->psc = isset($data['files']['meta']['psc'])?  $data['files']['meta']['psc'] : null;
 		
 		$obj->m4a   = isset($data['files']['media']['m4a'])?  $data['files']['media']['m4a'] : null;
 		$obj->mp3   = isset($data['files']['media']['mp3'])?  $data['files']['media']['mp3'] : null;
