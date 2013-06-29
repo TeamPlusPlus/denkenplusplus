@@ -1,6 +1,6 @@
-# Team PlusPlus
+# Denken++
 
-This is the repository for the [Denken++ website](denken.plusp.lu).
+This is the repository for the [Denken++ website](http://denken.plusp.lu).
 The site is powered by [Kirby](http://getkirby.com), please have a look at the original README below.
 
 ----
