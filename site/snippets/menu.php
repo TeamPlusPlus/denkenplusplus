@@ -28,13 +28,14 @@
 					<a href="<?php echo $newestepisode->url(); ?>"><?php echo Episodes::title($newestepisode, 0); ?></a>
 				</div>
 				
-				<h2>Nächste Folge: <?php echo Episodes::next()->infos->number; ?></h2>
-				<?php if(Episodes::next()->infos->state == STATE_LIVE) { ?>
+				<?php $next = Episodes::next(); ?>
+				<h2>Nächste Folge: <?php echo $next->infos->number; ?></h2>
+				<?php if($next->infos->state == STATE_LIVE) { ?>
 				<a href="http://mixlr.com/team" data-icon="b" class="highlight">Live!</a>
-				<?php } else if(Episodes::next()->infos->state == STATE_SOON) { ?>
-				<span data-icon="b"><?php echo Episodes::next()->infos->live; ?></span>
-				<?php } else if(Episodes::next()->infos->state == STATE_RECORDED) { ?>
-				<a href="http://mixlr.com/team/showreel/denken-<?php echo Episodes::next()->infos->id; ?>" data-icon="b" class="highlight">ReLive hören</a>
+				<?php } else if($next->infos->state == STATE_SOON) { ?>
+				<span data-icon="b"><?php echo $next->infos->live; ?></span>
+				<?php } else if($next->infos->state == STATE_RECORDED) { ?>
+				<a href="http://mixlr.com/team/showreel/denken-<?php echo $next->infos->id; ?>" data-icon="b" class="highlight">ReLive hören</a>
 				<?php } else { ?>
 				<span data-icon="b">In Planung</span>
 				<?php } ?>
