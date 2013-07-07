@@ -6,4 +6,4 @@ Description: Denken++ ist ein zweiwöchentlicher Podcast mit wechselnden Themen 
 ----
 TeamURL: plusp.lu
 ----
-Copyright: © (date: Year) Team PlusPlus &bull; Erstellt von [Lukas Bestle](http://lu-x.me) mit [Kirby](http://getkirby.com) und <span style="color:red">♥</span>
+Copyright: © (date: Year) [Team++](http://plusp.lu) &bull; Erstellt von [Lukas Bestle](http://lu-x.me) mit [Kirby](http://getkirby.com) und <span style="color:red">♥</span>
