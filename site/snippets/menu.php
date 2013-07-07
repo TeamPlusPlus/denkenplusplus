@@ -21,7 +21,7 @@
 				</div>
 			</header>
 			<aside>
-				<a href="<?php echo url('/'); ?>/" class="logo"><img src="http://stuff.plusp.lu/Images/Denken++/logo.png" alt="<?php echo $site->title(); ?>"></a>
+				<a href="<?php echo url('/'); ?>/" class="logo"><img src="http://stuff.plusp.lu/Images/<?php echo $site->title(); ?>/logo.png" alt="<?php echo $site->title(); ?>"></a>
 				<?php $newestepisode = Episodes::newest(); ?>
 				<div class="nomobile">
 					<h2>Aktuelle Folge:</h2>
