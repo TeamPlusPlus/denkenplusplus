@@ -4,3 +4,6 @@
 [submodule "assets/vendor/podlove"]
 	path = assets/vendor/podlove
 	url = https://github.com/podlove/podlove-web-player
+[submodule "site/plugins/apiclient"]
+	path = site/plugins/apiclient
+	url = https://github.com/TeamPlusPlus/apiclient
