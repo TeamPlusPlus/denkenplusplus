@@ -29,7 +29,7 @@
 		<?php endif; ?>
 		<meta property="og:determiner" content="the">
 		<meta property="og:locale" content="de_DE">
-		<meta property="og:site_name" content="<?php echo $page->title() ?>">
+		<meta property="og:site_name" content="<?php echo $site->title() ?>">
 		
 		<link href="<?php echo url('/feed/mp3') ?>" rel="alternate" type="application/rss+xml" title="Podcast-Feed (MP3)">
 		<link href="<?php echo url('/feed/m4a') ?>" rel="alternate" type="application/rss+xml" title="Podcast-Feed (M4A)">
