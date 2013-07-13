@@ -12,40 +12,40 @@ In der ersten Folge Denken++ unterhalten wir uns über den Datenschutz - von PRI
 ----
 Shownotes:
 
-### [00:00:00] Anfang
+### Anfang
 
 - Denken++ beschäftigt sich mit Technik-Themen und dem Zusammenhang mit der Gesellschaft
 - Zweiwöchentlich
 - Circa eine Stunde pro Folge
 
-### [00:00:42] Vorstellung
+### Vorstellung
 
 - [Sebastian](https://twitter.com/TrueSebi)
 - [Gehaxelt](https://twitter.com/gehaxelt)
 - [Lukas](https://twitter.com/vis7mac)
 
-### [00:01:49] PRISM
+### PRISM
 
 - PRISM ist ein Programm der NSA zur Überwachung möglicher Terroristen
 - Daten von Usern bestimmter US-Unternehmen müssen dem Staat zur Verfügung stehen
 
 - [Artikel zu PRISM auf Slur.at](http://slur.at/prism-houston-wir-haben-ein-problem/)
 
-### [00:18:17] Wie schützt man sich?
+### Wie schützt man sich?
 
-### [00:21:59] Staatstrojaner
+### Staatstrojaner
 
 - [eRecht 24-Artikel](http://www.e-recht24.de/news/telekommunikation/7510-netzueberwachung-bka-kauft-staatstrojaner-fuer-150000-euro.html)
 
-### [00:28:58] Drosselkom und der Datenschutz
+### Drosselkom und der Datenschutz
 
-### [00:31:23] De-Mail
+### De-Mail
 
-### [00:35:09] Alternativen zu De-Mail
+### Alternativen zu De-Mail
 
-### [00:40:05] Warum sich De-Mail nie durchsetzen wird
+### Warum sich De-Mail nie durchsetzen wird
 
-### [00:48:48] Credits
+### Credits
 
 - Mumble-Server: [Gehaxelt](https://twitter.com/gehaxelt)
 - Website: [Lukas](https://twitter.com/vis7mac)
@@ -55,12 +55,12 @@ Shownotes:
 - Live: [Mixlr](http://mixlr.com)
 - Alle anderen Credits siehe [GitHub](https://github.com/TeamPlusPlus)
 
-### [00:50:59] Nächste Folge
+### Nächste Folge
 
 - Unser Podcast-Setup
 
-### [00:51:29] Feedback
+### Feedback
 
 - Feedback immer willkommen - bitte an <hallo@plusp.lu>, [@TeamPlusPlus](https://twitter.com/TeamPlusPlus) bzw. [an Teammitglieder](http://plusp.lu/team)
 
-### [00:52:56] Ende
+### Ende
