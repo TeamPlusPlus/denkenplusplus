@@ -36,7 +36,7 @@ Shownotes:
 
 ### Aufnahme
 - GarageBand im Podcasting Mode
-- [Soundflower](http://cycling74.com/soundflower-landing-page/)
+- [Soundflower](http://cycling74.com/products/soundflower/)
 - (file: recording.pdf text: Altes Setup vs. neues Setup class: file)
 
 ### Live!
