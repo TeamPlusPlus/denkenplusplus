@@ -37,7 +37,7 @@ Shownotes:
 ### Aufnahme
 - GarageBand im Podcasting Mode
 - [Soundflower](http://cycling74.com/products/soundflower/)
-- (file: recording.pdf text: Altes Setup vs. neues Setup class: file)
+- (file: recording.pdf text: Altes Setup vs. neues Setup class: file) und der [Blogartikel dazu](http://lu-x.me/de/blog/mumble-multitrack)
 
 ### Live!
 - [Mixlr](http://mixlr.com)
