@@ -73,4 +73,4 @@ Shownotes:
 
 ### Ende
 - Wir freuen uns immer über Feedback und Vorschläge :-)
-- Schreibt uns eine Mail an <hallo@plusp.lu>, tweetet uns an (twitter: TeamPlusPlus), [sendet einzelnen Teammitgliedern eine Nachricht](http://plusp.lu/team)
+- Schreibt uns eine Mail an <hallo@plusp.lu>, tweetet uns an (twitter: TeamPlusPlus), [sendet einzelnen Teammitgliedern eine Nachricht](http://plusp.lu/team) oder schreibt einen Kommentar auf unserer Website
