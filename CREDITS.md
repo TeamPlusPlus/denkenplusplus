@@ -21,4 +21,4 @@
 
 ## Logo
 
-[Mato](http://pixelspezi.de)
+[Christian Reichel](https://twitter.com/_Mr_Spike_)
