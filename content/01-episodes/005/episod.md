@@ -57,7 +57,7 @@ Shownotes:
 Meldet euch bei uns!
 
 - Hat euch diese Sendung gefallen? Habt ihr Verbesserungsvorschläge? Haben wir einen wichtigen Punkt vergessen? Habt ihr einen Themenvorschlag für die nächste Sendung? Wir freuen uns immer über Feedback und Vorschläge :-)
-- Schreibt uns eine Mail an (mail: hallo@plusp.lu), tweetet uns an (twitter: teamplusplus), [sendet einzelnen Teammitgliedern eine Nachricht](http://plusp.lu/team) oder schreibt einfach einen Kommentar unter [diese Episode auf unserer Webseite](http://denken.plusp.lu/episodes/005)
+- Schreibt uns eine Mail an <hallo@plusp.lu>, tweetet uns an (twitter: teamplusplus), [sendet einzelnen Teammitgliedern eine Nachricht](http://plusp.lu/team) oder schreibt einfach einen Kommentar unter [diese Episode auf unserer Webseite](http://denken.plusp.lu/episodes/005)
 - Wir belohnen Nachrichten an uns sogar mit virtuellen Keksen! :-)
 
 
